@@ -13,7 +13,7 @@ import GlobalStyle from './styles/global';
 
 export default function App() {
   return (
-    <Provider stsore={store}>
+    <Provider store={store}>
       <Router history={history}>
         <Routes />
         <GlobalStyle />
