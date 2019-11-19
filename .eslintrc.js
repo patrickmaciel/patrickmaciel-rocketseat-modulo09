@@ -2,20 +2,17 @@ module.exports = {
   env: {
     es6: true,
     jest: true,
-    browser: true
+    browser: true,
   },
   extends: ["airbnb", "prettier", "prettier/react"],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly",
-    __DEV__: true
+    __DEV__: true,
   },
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    },
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: "module",
   },
   plugins: ["react", "jsx-a11y", "import", "react-hooks", "prettier"],
   rules: {
@@ -28,17 +25,17 @@ module.exports = {
     "react-native/no-raw-text": "off",
     "no-param-reassign": "off",
     "no-underscore-dangle": "off",
-    camelcase: "off",
+    "camelcase": "off",
     "no-console": ["error", { allow: ["tron"] }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    'react/jsx-props-no-spreading': 'off',
+    "react/jsx-props-no-spreading": "off",
   },
-  // settings: {
-  //   "import/resolver": {
-  //     "babel-plugin-root-import": {
-  //       rootPathSuffix: "src"
-  //     },
-  //   },
-  // },
+  settings: {
+    "import/resolver": {
+      "babel-plugin-root-import": {
+        rootPathSuffix: "src",
+      },
+    },
+  },
 };
